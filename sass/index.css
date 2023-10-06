@@ -1,3 +1,9 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
 ul {
   padding: 0;
   list-style: none;
@@ -94,28 +100,32 @@ p {
   height: 24px;
 }
 
-.menu__list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+.nav {
   color: #292929;
   font-size: 22px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 22px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.menu__link {
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav__link {
   position: relative;
   color: #292929;
   text-decoration: none;
 }
 
-.menu__link::after {
+.nav__link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -8px;
   width: 0;
   height: 1px;
   background-color: #292929;
@@ -123,12 +133,12 @@ p {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.03, 0.95), width 0.3s cubic-bezier(0.4, 0, 0.03, 0.95);
 }
 
-.menu__link:hover::after {
+.nav__link:hover::after {
   width: 100%;
   transform-origin: left;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.03, 0.95), width 0.3s cubic-bezier(0.4, 0, 0.03, 0.95);
 }
 
-.menu__link:hover {
+.nav__link:hover {
   color: #292929;
 }/*# sourceMappingURL=index.css.map */
