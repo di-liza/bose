@@ -47,11 +47,25 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Inter;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
+}
+
+.header__bottom {
+  color: #292929;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.header__waves-img {
+  width: 64px;
+  height: 76px;
+  margin-bottom: 40px;
 }
 
 .menu {
@@ -75,6 +89,11 @@ p {
   margin-bottom: 64px;
 }
 
+.open-menu-btn {
+  width: 24px;
+  height: 24px;
+}
+
 .menu__list {
   display: flex;
   flex-direction: column;
@@ -86,6 +105,30 @@ p {
   text-transform: uppercase;
 }
 
+.menu__link {
+  position: relative;
+  color: #292929;
+  text-decoration: none;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #292929;
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.03, 0.95), width 0.3s cubic-bezier(0.4, 0, 0.03, 0.95);
+}
+
+.menu__link:hover::after {
+  width: 100%;
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.03, 0.95), width 0.3s cubic-bezier(0.4, 0, 0.03, 0.95);
+}
+
 .menu__link:hover {
-  text-decoration: underline;
+  color: #292929;
 }/*# sourceMappingURL=index.css.map */

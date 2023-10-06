@@ -10,10 +10,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  font-family: Inter;
 }
 .header__top {
   display: flex;
   justify-content: space-between;
 }
 .header__bottom {
+  color: #292929;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 800;
+}
+.header__waves-img {
+  width: 64px;
+  height: 76px;
+  margin-bottom: 40px;
 }
