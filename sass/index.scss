@@ -1,20 +1,8 @@
-@import "./header";
-@import "./recomented";
-@import "./why-buy";
-@import "./footer";
+@import "./components/common/body";
+@import "./components/common/container";
 
-ul {
-  padding: 0;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
+@import "./components/header";
+@import "./components/menu";
+@import "./components/recomented";
+@import "./components/why-buy";
+@import "./components/footer";
