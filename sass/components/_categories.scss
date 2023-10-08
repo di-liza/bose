@@ -1,0 +1,22 @@
+.categories__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+.categories__img-wrapp {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.categories__img-wide {
+  width: 672px;
+  height: 320px;
+}
+.categories__img-squire {
+  width: 324px;
+  height: 320px;
+}
+.categories__title {
+  color: #292929;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+}

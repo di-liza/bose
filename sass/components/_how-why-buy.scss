@@ -1,0 +1,26 @@
+.how-to-buy {
+  display: flex;
+  gap: 111px;
+  justify-content: space-between;
+}
+
+.how-to-buy__descr-wrapp {
+  flex-basis: 50%;
+}
+.how-to-buy__list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  color: #292929;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.how-to-buy__descr {
+  color: #292929;
+  font-size: 16px;
+  line-height: 27px;
+}

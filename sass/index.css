@@ -37,6 +37,10 @@ p {
   padding: 0;
 }
 
+.main {
+  background-color: #fff;
+}
+
 .container {
   width: 1260px;
   margin: 0 auto;
@@ -195,4 +199,69 @@ p {
   font-size: 16px;
   font-weight: 700;
   line-height: 140%;
+}
+
+.categories__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.categories__img-wrapp {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.categories__img-wide {
+  width: 672px;
+  height: 320px;
+}
+
+.categories__img-squire {
+  width: 324px;
+  height: 320px;
+}
+
+.categories__title {
+  color: #292929;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.how-to-buy {
+  display: flex;
+  gap: 111px;
+  justify-content: space-between;
+}
+
+.how-to-buy__descr-wrapp {
+  flex-basis: 50%;
+}
+
+.how-to-buy__list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-bottom: 40px;
+  color: #292929;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.how-to-buy__descr {
+  color: #292929;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../images/footer-bg.jpg");
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=index.css.map */
