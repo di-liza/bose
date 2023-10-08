@@ -234,6 +234,11 @@ p {
   justify-content: space-between;
 }
 
+.how-to-buy__title {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
 .how-to-buy__descr-wrapp {
   flex-basis: 50%;
 }
