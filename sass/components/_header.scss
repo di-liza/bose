@@ -19,12 +19,42 @@
 }
 .header__bottom {
   color: #292929;
-  font-size: 48px;
   font-style: italic;
   font-weight: 800;
+  font-size: 32px;
+
+  @include tablet {
+    font-size: 40px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+  }
 }
 .header__waves-img {
-  width: 64px;
-  height: 76px;
-  margin-bottom: 40px;
+  width: 32px;
+  height: 38px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    width: 64px;
+    height: 76px;
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    width: 64px;
+    height: 76px;
+    margin-bottom: 40px;
+  }
+}
+
+.logo {
+  width: 127px;
+  height: 16px;
+
+  @include tablet {
+    width: 190px;
+    height: 24px;
+  }
 }
