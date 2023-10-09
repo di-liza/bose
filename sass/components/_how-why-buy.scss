@@ -1,7 +1,14 @@
 .how-to-buy {
   display: flex;
-  gap: 111px;
-  justify-content: space-between;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+  }
+  @include desktop {
+    gap: 111px;
+  }
 }
 .how-to-buy__title {
   text-align-last: left;

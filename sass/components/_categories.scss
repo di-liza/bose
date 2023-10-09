@@ -1,18 +1,45 @@
 .categories__item:not(:last-child) {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 64px;
+  }
 }
 .categories__img-wrapp {
   display: flex;
-  gap: 24px;
+
   margin-bottom: 16px;
+  gap: 20px;
+
+  @include tablet {
+    gap: 24px;
+  }
 }
 .categories__img-wide {
-  width: 672px;
-  height: 320px;
+  width: 130px;
+  height: 130px;
+
+  @include tablet {
+    width: 392px;
+    height: 187px;
+  }
+  @include desktop {
+    width: 672px;
+    height: 320px;
+  }
 }
 .categories__img-squire {
-  width: 324px;
-  height: 320px;
+  width: 130px;
+  height: 130px;
+
+  @include tablet {
+    width: 184px;
+    height: 187px;
+  }
+  @include desktop {
+    width: 324px;
+    height: 320px;
+  }
 }
 .categories__title {
   color: #292929;
